@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
-
 const router = require('./rountes');
-app.use("/", require('./rountes/index'));
+require('dotenv').config();
+
+// routes
+app.use("/",         require('./rountes/index'));
+app.use("/contacts", require('./rountes/contacts'));
 
 
 

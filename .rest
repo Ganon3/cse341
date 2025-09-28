@@ -1,5 +1,11 @@
 GET http://localhost:3000 HTTP/1.1
+###
+GET http://localhost:3000/zippy-dog HTTP/1.1
 
 ###
 
-GET http://localhost:3000/zippy-dog HTTP/1.1
+GET http://localhost:3000/contacts/roro HTTP/1.1
+###
+GET http://localhost:3000/contacts/ibo HTTP/1.1 
+###
+GET http://localhost:3000/contacts/khall HTTP/1.1
