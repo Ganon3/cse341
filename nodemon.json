@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "routes", "controllers", "server.js"], 
+  "ignore": ["swagger_output.json", "swagger.js"],
+  "ext": "js,json,mjs",
+  "exec": "node server.js"
+}
+
