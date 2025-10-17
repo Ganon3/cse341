@@ -49,15 +49,6 @@ const create = async (req, res, next) => {
   }
 };
 
-/*
-#swagger.description = 'cxhange a contact by id'
-#swagger.parameters['body'] ={
-  in: 'body',
-  description: 'Contact information.',
-  required: true,
-  schema: { $ref: "#/definitions/Contact" }
-}
-*/
 const update = async (req, res, next) => {
   const id = req.params.id;
   let result = await db_utils.update_contact(id, req);

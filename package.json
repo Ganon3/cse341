@@ -9,12 +9,14 @@
     "start-prod": "node server.js",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "swagger": "node swagger.js"
+    "swagger": "node swagger.js",
+    "clean-install": "rimraf node_modules package-lock.json && npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "mongodb": "^6.20.0",
@@ -28,6 +30,7 @@
     "globals": "^16.4.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "swagger-autogen": "^2.23.7"
   },
   "prettier": {
