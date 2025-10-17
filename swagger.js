@@ -1,4 +1,5 @@
 const swaggerAutogen = require('swagger-autogen')();
+require('dotenv').config;
 
 const doc = {
     swagger: '2.0',
@@ -7,7 +8,7 @@ const doc = {
         description: 'for all API endpoints',
         version: '1.0.0',
     },
-    host: 'localhost:3000',
+    host: process.env.SWAGGER_HOST || 'localhost:3000',
     basePath: '/',
     schemes: ['http', 'https'],
 };
