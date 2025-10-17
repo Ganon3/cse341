@@ -1,3 +1,7 @@
+###// localhost:3000
+###// localhost:3000
+
+
 GET http://localhost:3000 HTTP/1.1
 ###
 GET http://localhost:3000/zippy-dog HTTP/1.1
@@ -10,7 +14,7 @@ GET http://localhost:3000/contacts/ibo HTTP/1.1
 ###
 GET http://localhost:3000/contacts/khall HTTP/1.1
 ###
-GET http://localhost:3000/contacts/byId/68d873c835cf59a56bdb29cd HTTP/1.1
+GET http://localhost:3000/contacts/byId/68d875a335cf59a56bdb29d0 HTTP/1.1
 
 ###
 
@@ -36,4 +40,49 @@ Content-Type: application/json
     "dob": "02/12/2990"
 }
 ### 
-DELETE http://localhost:3000/contacts/68e1ff860bd3e6593eb8751a HTTP/1.1
+DELETE http://localhost:3000/contacts/68d875a335cf59a56bdb29d0 HTTP/1.1
+
+
+### // https://cse341-s8li.onrender.com/
+### // https://cse341-s8li.onrender.com/
+
+
+GET https://cse341-s8li.onrender.com/ HTTP/1.1
+###
+GET https://cse341-s8li.onrender.com/zippy-dog HTTP/1.1
+
+###
+
+GET https://cse341-s8li.onrender.com/contacts/roro HTTP/1.1
+###
+GET https://cse341-s8li.onrender.com/contacts/ibo HTTP/1.1
+### 
+GET https://cse341-s8li.onrender.com/contacts/khall HTTP/1.1
+###
+GET https://cse341-s8li.onrender.com/contacts/byId/68d875a335cf59a56bdb29d0 HTTP/1.1
+
+###
+POST https://cse341-s8li.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "name_f": "shelly",
+    "name_l": "grigg",
+    "email": "shelly178@test.com",
+    "collor": "redish siliver",
+    "dob": "04/14/2239"
+}
+
+###
+PUT https://cse341-s8li.onrender.com/contacts/68d873c835cf59a56bdb29cd HTTP/1.1
+Content-Type: application/json
+
+{
+    "name_f": "roro",
+    "name_l": "roge",
+    "email": "roro123@test.com",
+    "collor": "pinkish violet",
+    "dob": "02/12/2990"
+}
+### 
+DELETE https://cse341-s8li.onrender.com/contacts/68f2030b16442f7d96e2a3e6 HTTP/1.1
